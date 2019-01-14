@@ -1,0 +1,59 @@
+@keyframes CimIntro1 {
+    0% {
+        opacity: 0;
+        transform: translate(-30px, 75px);
+    }
+
+    75% {
+        opacity: 1;
+        transform: translate(1rem, -2.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+@keyframes CimIntro2 {
+    0% {
+        opacity: 0;
+        transform: translate(.5rem, -7.5rem);
+    }
+
+    75% {
+        opacity: 0.75;
+        transform: translate(-3.5rem, 2.5rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(-2.5rem);
+    }
+}
+
+
+@keyframes nextHover{
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateY(.25rem);
+    }
+}
+
+
+@keyframes prevHover {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(-.25rem);
+    }
+}

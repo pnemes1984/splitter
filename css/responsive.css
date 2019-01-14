@@ -1,0 +1,48 @@
+@media only screen and (max-width: 1000px) {
+    h1 {
+        font-size: 1.5rem;
+        letter-spacing: 1rem;
+    }
+
+    .title__span{
+        animation-name: none;
+    }
+
+    .title__span--2{
+        transform: translateX(-1.4rem);
+    }
+
+    .title{
+        min-width: 35rem;
+    }
+
+    .footer{
+        letter-spacing: .2rem;
+        font-size: .4rem;
+    }
+
+    .footer__elvalaszto{
+        padding-left: .4rem;
+        padding-right: .4rem;
+    }
+
+    .form__text {
+        border-radius: 0;
+        padding: 0;
+        height: 1.6rem;
+    }
+
+    .btn{
+        height: 1.6rem;
+        padding: 0 .5rem .2rem .5rem;
+    }
+
+    .menu__keret {
+        flex-direction: column;
+    }
+
+    .magyarazat{
+        font-size: .8rem;
+        width: 20vw;
+    }
+}

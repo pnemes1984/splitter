@@ -1,0 +1,17 @@
+html{
+    --kek-1: rgb(83, 91, 99);
+    --kek-2: rgb(102, 117, 126);
+    --kek-2-hatter: rgba(102, 117, 126, 0.8);
+
+    --sarga-1: rgb(223, 201, 106);
+    --sarga-2: rgb(185, 167, 83);
+
+    --barna-1: rgba(99, 78, 53, 0.8);
+
+    --feher: rgb(255, 255, 255);
+    --feher-hatter: rgba(255, 255, 255, .4);
+    --feher-hatter-2: rgba(255, 255, 255, .6);
+
+    --bordo: rgb(175, 44, 4);
+    --bordo-hatter: rgba(175, 44, 4, .2);
+}

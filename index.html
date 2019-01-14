@@ -1,0 +1,176 @@
+﻿<!doctype html>
+<html lang = "hu">
+    <head>
+        <meta charset = "utf-8">
+        <title>$PLITT€R</title>
+        <meta name="description" content="költségek elosztása">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" type="image/png" href="img/icon.png">
+        <link rel="stylesheet" href="css/animations.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/colors.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <!--<link rel = "stylesheet" href="https://fonts.googleapis.com/css?family=Anton" type="text/css">-->
+        <!--<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald" type="text/css">-->
+    </head>
+
+    <body>
+        <h1 class="title">
+            <div class="title__span title__span--1">$plit</div>
+            <div class="title__span title__span--2">t€r</div>
+        </h1>
+
+        <form class="form form__alkalom">
+            <input type="text" placeholder="Hol voltatok?" name="alkalom" class="form__text form__alkalom--text" id="form__alkalom--text">
+            <div class="btn form__alkalom--btn">OK</div>
+        </form>
+    
+        <div class="keret">
+            <div class="container">
+                <!--resztvevok-->
+                    <div class="fejlec" id="resztvevok__fejlec">résztvevők</div>
+                    <div class="menu" id="resztvevok__menu">
+                        <div class = "menu__keret resztvevok__menu__keret">
+                            <form class="menu__form resztvevok__form">
+                                <input type="text" maxlength=17 class="form__text resztvevok__form__text" name="nev" placeholder="Ki volt ott?">
+                                <div class="btn btn__rv--plusz">hozzáad</div>
+                            </form>
+                
+                            <ul class="menu__lista rv__lista">
+                                <!--<li class="listaelem" id="rv__lista-1">
+                                        <div class="listaelem__szoveg rv__nev rv__nev-1">Név 1</div>
+                                        <div class="btn btn--minusz" id="rv--minusz-1">töröl</div>
+                                    </li>-->
+                            </ul>
+                        </div>
+
+                        <div class="pageturn next" id="resztvevok__next">
+                            <div class="pageturn__icon next__icon"></div>
+                        </div>
+                    </div>
+                
+                <!--koltsegek-->
+                    <div class="fejlec" id="koltsegek__fejlec">költségek</div>
+                    <div class="menu" id="koltsegek__menu">
+                        <div class="pageturn prev" id="koltsegek__prev">
+                            <div class="pageturn__icon prev__icon"></div>
+                        </div>
+
+                        <div class="menu__keret koltsegek__menu__keret">
+                            <div class="koltsegek__bal">
+				                <div class="magyarazat koltsegek__magyarazat">
+					                Kérlek, add meg a költség nevét, hogy ki fizette, és hogy mennyibe került. Ezt követően a jobb oldalon a táblázatban jelöld be, hogy ki fogyasztott a megvásárolt javakból. A lakatra kattintva egy korábban már megadott költség adatait módosíthatod.
+				                </div>
+                                <ul class="menu__lista koltsegek__lista">
+                                <!--<li class="listaelem ktg__listasor" id="ktg__lista-0">
+                                        <div class="listaelem__szoveg koltsegek__elem ktg__nev" id="ktg__nev-0">Költségnév</div>
+                                        <span id="ktg__span-0">fizette:</span>
+                                        <div class="listaelem__szoveg koltsegek__elem ktg__fizette" id="ktg__fizette-0">Név 1</div>
+                                        <div class="listaelem__szoveg koltsegek__elem ktg__ar" id="ktg__ar-0">1000</div>
+
+                                        <div class="btn btn--minusz" id="ktg__minusz-0">töröl</div>
+                                        <div class="lakat" id="lakat-0">
+                                            <div class="lakat--teteje" id="lakat--teteje-0"></div>
+                                            <div class="lakat--alja"></div>
+                                        </div>
+                                    </li>-->
+                                </ul>
+                                <form class="menu__form koltsegek__form">
+                                    <input type="text" maxlength=27 class="form__text koltsegek__elemsor koltsegek__koltsegnev" name="koltsegnev" placeholder="Költség neve">
+                                    <span class="koltsegek__span">fizette:</span>
+                                    <select class="form__text koltsegek__elem koltsegek__fizette" name="fizette">
+                                    <!--<option id="opcio-1" value = "Név 1">Név 1</option>
+                                        <option id="opcio-2" value = "Név 2">Név 2</option>
+                                        <option id="opcio-3" value = "Név 3">Név 3</option>-->
+                                    </select>
+                                    <input type="number" class="form__text koltsegek__elem koltsegek__ar" name="ar" placeholder="Ár">
+                                    <div class="btn btn__ktg--plusz">hozzáad</div>
+                                </form>
+                            </div>
+
+                            <div class="koltsegek__tablazat">
+
+                                <div id="koltsegek__tablazat--nevsor">
+                                <!--<div class="tablazat--fejlec-nev" id="koltsegek__tablazat--nev-0">a leghosszabb név</div>
+                                    <div class="tablazat--fejlec-nev" id="koltsegek__tablazat--nev-1">Hosszú név</div>-->
+				                </div>
+
+                            <!--<div class="koltsegek__tablazat--sor" id="koltsegek__tablazat--ktg-0">
+                                    <div class="koltsegek__rubrika" id="koltsegek__tablazat--ktg-0-resztvevo-0">
+                                        <input type="checkbox" class="koltsegek__checkbox" id="ktg-0-resztvevo-0">
+                                        <label for="ktg-0-resztvevo-0" class="koltsegek__label">
+                                            <div class="koltsegek__rubrika--ures">&nbsp;</div>
+                                            <div class="koltsegek__rubrika--teli" id="rubrika__ktg-0-resztvevo-0">&nbsp;</div>
+                                        </label>
+                                    </div>
+
+                                </div>-->
+
+                            </div>
+                        </div>
+
+                        <div class="pageturn next" id="koltsegek__next">
+                            <div class="pageturn__icon next__icon"></div>
+                        </div>
+                    </div>
+
+                <!--tartozasok-->
+                    <div class="fejlec" id="tartozasok__fejlec">tartozások</div>
+                    <div class="menu" id="tartozasok__menu">
+                        <div class="pageturn prev" id="tartozasok__prev">
+                            <div class="pageturn__icon prev__icon"></div>
+                        </div>
+                        <div class="menu__keret">
+                            <div class="tartozasok__bal">
+                                <div class ="magyarazat tartozasok__magyarazat">
+                                    A függőleges oszlopok azt jelzik, ki tartozik, a vízszintes sorok azt, hogy kinek. Az egyes rubrikákban látható a tartozás összege. Az egérkurzort a rubrika fölé helyezve összegyűjtve is megjeleníthető, hogy ki, kinek, mennyivel jön.
+                                </div>
+                            </div>
+                            <div class="tartozasok__jobb">
+                                <div class="tartozasok__matrix">
+                                <!--<div id="tartozasokmatrix__fejlec">
+                                        <div class="tartozasokmatrix__fejlec--nev tartozas__nev-fuggoleges" id="tartozasokmatrix__fejlec-0">
+                                            Név 0
+                                        </div>
+                                        <div class="tartozasokmatrix__fejlec--nev tartozas__nev-fuggoleges" id="tartozasokmatrix__fejlec-0">
+                                            Név 1
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="tartozasok__sor" id="tartozasok__sor-0">
+                                        <div class="tartozas__nev-vizszintes">Név 0</div>
+                                        <div class="tartozasok__rubrika" id="tartozasok__fizette-0-tartozik-0">
+                                            10000
+                                        </div>
+                                        <div class="tartozasok__rubrika" id="tartozasok__fizette-0-tartozik-1">
+                                            10000
+                                        </div>
+                                    </div>
+                                    <div class="tartozasok__sor" id="tartozasok__sor-1">
+                                        <div class="tartozas__nev-vizszintes">Név 1</div>
+                                        <div class="tartozasok__rubrika" id="tartozasok__fizette-1-tartozik-0">
+                                            10000
+                                        </div>
+                                        <div class="tartozasok__rubrika" id="tartozasok__fizette-1-tartozik-1">
+                                            10000
+                                        </div>
+                                    </div>                                
+                                -->
+                                </div>
+                            </div>
+                        </div>
+                                
+                    </div>
+            </div>        
+        </div>
+
+        <footer class="footer">
+            <div class="footer__info">Az alkalmazást készítette: Nemes Péter, 2018</div>
+            <div class="footer__elvalaszto">|</div>
+            <a class="footer__kontakt" href="mailto:pnemes1984@gmail.com">kontakt</a>
+        </footer>
+    </body>
+
+    <script src="js/script.js"></script>
+</html>
