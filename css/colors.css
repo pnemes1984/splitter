@@ -14,4 +14,6 @@ html{
 
     --bordo: rgb(175, 44, 4);
     --bordo-hatter: rgba(175, 44, 4, .2);
+
+    --fekete-atlatszo: rgba(0, 0, 0, .45);
 }

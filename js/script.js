@@ -558,3 +558,15 @@ document.querySelector('#koltsegek__next').addEventListener('click', function(){
 document.querySelector('#koltsegek__prev').addEventListener('click', function(){turnPage('resztvevok');});
 
 document.querySelector('#tartozasok__prev').addEventListener('click', function(){turnPage('koltsegek');});
+
+/////////////////////////////////////////////////////////////////////////
+//////////////////////////// BACK-END MENU //////////////////////////////
+
+
+document.querySelector('#save').addEventListener('mouseover', function(){document.querySelector('#be_menu_text').innerText = 'FÁJLBA MENTÉS'});
+document.querySelector('#load').addEventListener('mouseover', function(){document.querySelector('#be_menu_text').innerText = 'BETÖLTÉS FÁJLBÓL'});
+document.querySelector('#delete').addEventListener('mouseover', function(){document.querySelector('#be_menu_text').innerText = 'FÁJL TÖRLÉSE'});
+
+document.querySelector('#be_menu_container').addEventListener('mouseleave', function(){
+	document.querySelector('#be_menu_text').innerHTML = ''
+});

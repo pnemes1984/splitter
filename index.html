@@ -16,6 +16,15 @@
     </head>
 
     <body>
+	<div id="be_menu">
+		<div id="be_menu_container">
+			<div class="be_menu_element" id="load"></div>
+			<div class="be_menu_element" id="save"></div>
+			<div class="be_menu_element" id="delete"></div>
+		</div>
+		<div id="be_menu_text"></div>
+	</div>
+
         <h1 class="title">
             <div class="title__span title__span--1">$plit</div>
             <div class="title__span title__span--2">t€r</div>
@@ -23,7 +32,7 @@
 
         <form class="form form__alkalom">
             <input type="text" placeholder="Hol voltatok?" name="alkalom" class="form__text form__alkalom--text" id="form__alkalom--text">
-            <div class="btn form__alkalom--btn">OK</div>
+            <div class="btn">OK</div>
         </form>
     
         <div class="keret">
@@ -170,6 +179,19 @@
             <div class="footer__elvalaszto">|</div>
             <a class="footer__kontakt" href="mailto:pnemes1984@gmail.com">kontakt</a>
         </footer>
+
+	<!--BACK-END MENU-->
+	<div class="be_screen">
+		<div class="be_window">
+			<div class="be_title">Mentés fájlba</div>
+			<form id="be_save_form">
+				<input class="form__text" type="text" placeholder="fájlnév">
+				<input class="form__text" type="password" placeholder="jelszó">
+				<input class="form__text" type="password" placeholder="jelszó újra">
+				<div class="btn btn_be">mentés</div>
+			</form>
+		</div>
+	</div>
     </body>
 
     <script src="js/script.js"></script>
